@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Changelog</title>
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <style type="text/css">
+        
+            body
+            {
+                background:#f2f2f2;
+            }
+        
+            .payment
+        	{
+        		border:1px solid #f2f2f2;
+        		height:280px;
+                border-radius:20px;
+                background:#fff;
+        	}
+           .payment_header
+           {
+               background:rgb(82, 206, 255);
+        	   padding:20px;
+               border-radius:20px;
+        
+           }
+
+           .check
+           {
+        	   margin:0px auto;
+        	   width:50px;
+        	   height:50px;
+        	   border-radius:100%;
+        	   background:#fff;
+        	   text-align:center;
+           }
+
+           .check i
+           {
+               color:rgb(82, 206, 255);
+        	   vertical-align:middle;
+        	   line-height:50px;
+        	   font-size:30px;
+           }
+       
+            .content 
+            {
+                text-align:center;
+            }
+        
+            .content  h1
+            {
+                font-size:25px;
+                padding-top:25px;
+            }
+        
+            .content a
+            {
+                width:200px;
+                height:35px;
+                color:#fff;
+                border-radius:30px;
+                font-size: 16px;
+                font-weight: 500px;
+                padding:7px 14px;
+                background:rgb(82, 206, 255);
+                transition:all ease-in-out 0.3s;
+            }
+        
+            .content a:hover
+            {
+                text-decoration:none;
+                background:#000;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+               <div class="col-md-6 mx-auto mt-5">
+                  <div class="payment">
+                     <div class="payment_header">
+                        <div class="check"><i class="fa fa-check" aria-hidden="true"></i></div>
+                     </div>
+                     <div class="content">
+                        <h1>Successful payment</h1>
+                        <p>Within an hour you will receive bonuses in the bot. <br>If you haven't received bonuses, please contact us using the button below</p>
+                        <a href="https://changelog.fun/discord">Join support server</a>
+                     </div> 
+                  </div>
+               </div>
+            </div>
+        </div>
+        <script>
+            const response = fetch('http://api.changelog.fun/success'+window.location.search, {
+                method: 'post',
+                    body: {
+
+                    }
+            });
+        </script>
+    </body>
+</html>
